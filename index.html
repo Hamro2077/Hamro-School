@@ -87,9 +87,9 @@ body {
     font-weight: bold;
 }
 
-/* MOBILE VIEW */
 @media screen and (max-width: 768px) {
 
+    /* MENU */
     .menu-links {
         display: none;
         width: 100%;
@@ -107,13 +107,27 @@ body {
         background-color: #d7c80b;
     }
 
-    .school-name {
-        font-size: 48px;
+    /* HEADER FIX */
+    .header {
+        padding-top: 20px;
+        text-align: center;
     }
 
     .logo {
-        width: 120px;
-        top: 10px;
+        position: static;        /* MOST IMPORTANT LINE */
+        display: block;
+        margin: 0 auto 10px auto;
+        width: 90px;
+    }
+
+    .school-name {
+        font-size: 36px;
+        margin: 5px 0;
+    }
+
+    .tagline {
+        font-size: 14px;
+        padding: 0 10px;
     }
 }
 
@@ -177,3 +191,4 @@ function toggleMenu() {
 
 </body>
 </html>
+
