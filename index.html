@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamro School</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: #050855;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.menu {
+    background-color: #d7c80b;
+    overflow: hidden;
+}
+
+.menu a {
+    float: left;
+    color: #0a0000;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #ff6f61;
+}
+
+.main {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(223 113 18);
+    padding-bottom: 100px;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.logo {
+    width: 180px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    right: 80px;
+}
+.header {
+    position: relative;
+}
+.school-name {
+    font-size: 100px;
+    margin: 0;
+    font-weight: bold;
+}
+.tagline {
+    font-size: 16px;
+}
+.menu-toggle {
+    display: none;
+    font-size: 20px;
+    padding: 14px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 768px) {
+
+    .menu-links {
+        display: none;
+        width: 100%;
+    }
+
+    .menu a {
+        float: none;
+        display: block;
+        text-align: left;
+        border-top: 1px solid #ccc;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #d7c80b;
+    }
+
+    .school-name {
+        font-size: 48px;
+    }
+
+    .logo {
+        width: 120px;
+        top: 10px;
+    }
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <img src="logo.png" class="logo" alt="School Logo">
+
+    <h1 class="school-name">Hamro School</h1>
+
+    <p class="tagline">
+        Welcome to Hamro School page, learning with fun and care
+    </p>
+
+</div>
+
+
+<div class="menu">
+    <span class="menu-toggle" onclick="toggleMenu()">☰ Menu</span>
+
+    <div class="menu-links" id="menuLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="#">Programs</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="admission.html">Admission</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+
+<div class="main">
+<h2>Join Our Preschool Today</h2>
+<p>Give your child the best start in life</p>
+
+<br>
+
+<a class="button" href="admission.html">Admission Open</a>
+
+</div>
+
+<div class="footer">
+© 2026 Hamro School - All Rights Reserved
+</div>
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menuLinks");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
